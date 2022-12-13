@@ -62,6 +62,12 @@ const CoinPage = () => {
       padding: 25,
       paddingTop: 10,
       width: "100%",
+      //theme.breakpoints é do próprio material
+      //xs, extra-small: 0px
+      //sm, small: 600px
+      //md, medium: 900px
+      //lg, large: 1200px
+      //extra-large: 1536px
       [theme.breakpoints.down("md")]: {
         display: "flex",
         justifyContent: "space-around",
@@ -70,6 +76,7 @@ const CoinPage = () => {
         flexDirection: "column",
         alignItems: "center",
       },
+      //a função down retorna uma media query
       [theme.breakpoints.down("xs")]: {
         alignItems: "start",
       },
